@@ -1,8 +1,8 @@
 FROM postgres:16
 
 RUN apt-get update && apt-get install -y \
-    postgresql-16-repack \ # 表重组
-    postgresql-16-partman \ # 自动分区
-    postgresql-contrib \ # 额外工具
-    pg_cron \ # 定时任务调度
+    postgresql-16-repack \
+    postgresql-16-partman \
+    postgresql-contrib \
+    pg_cron \
     && rm -rf /var/lib/apt/lists/*
